@@ -121,18 +121,28 @@ public class Practica extends JFrame {
         setLayout(new FlowLayout());
 
         shonenJComboBox = new JComboBox<String>(shonen);
+        shonenJComboBox.insertItemAt("Shonen", 0);
+        shonenJComboBox.setSelectedIndex(0);
         shonenJComboBox.setMaximumRowCount(6);
 
         seinenJComboBox = new JComboBox<String>(seinen);
+        seinenJComboBox.insertItemAt("Seinen", 0);
+        seinenJComboBox.setSelectedIndex(0);
         seinenJComboBox.setMaximumRowCount(6);
 
         shojoJComboBox = new JComboBox<String>(shojo);
+        shojoJComboBox.insertItemAt("Shojo", 0);
+        shojoJComboBox.setSelectedIndex(0);
         shojoJComboBox.setMaximumRowCount(6);
 
         spokonJComboBox = new JComboBox<String>(spokon);
+        spokonJComboBox.insertItemAt("Spokon", 0);
+        spokonJComboBox.setSelectedIndex(0);
         spokonJComboBox.setMaximumRowCount(6);
 
         clasicosJComboBox = new JComboBox<String>(clasicos);
+        clasicosJComboBox.insertItemAt("Clasicos", 0);
+        clasicosJComboBox.setSelectedIndex(0);
         clasicosJComboBox.setMaximumRowCount(6);
 
         imagenJLabel = new JLabel(iconos[0]);
