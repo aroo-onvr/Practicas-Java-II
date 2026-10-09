@@ -5,6 +5,6 @@ public class Main {
         Practica v1 = new Practica();
         v1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         v1.setVisible(true);
-        v1.setSize(900, 350);
+        v1.setSize(900, 370);
     }
 }

@@ -81,39 +81,39 @@ public class Practica extends JFrame {
         "Fullmetal Alchemist es un manga de fantasia y aventura que sigue la historia de los hermanos Edward y Alphonse Elric, quienes buscan la Piedra Filosofal para restaurar sus cuerpos despues de un fallido experimento de alquimia."
     };
 
-    private Icon cargarImagen(String nombre) {
-        return new ImageIcon(getClass().getResource("/assets/" + nombre));
+    private Icon cargarImagen(String carpeta, String nombre) {
+        return new ImageIcon(getClass().getResource("/assets/"+ carpeta + "/" + nombre));
     }
     private final Icon[] iconos = {
-        cargarImagen(shonen[0]),
-        cargarImagen(shonen[1]),
-        cargarImagen(shonen[2]),
-        cargarImagen(shonen[3]),
-        cargarImagen(shonen[4]),
+        cargarImagen("shonen", shonen[0]),
+        cargarImagen("shonen", shonen[1]),
+        cargarImagen("shonen", shonen[2]),
+        cargarImagen("shonen", shonen[3]),
+        cargarImagen("shonen", shonen[4]),
 
-        cargarImagen(seinen[0]),
-        cargarImagen(seinen[1]),
-        cargarImagen(seinen[2]),
-        cargarImagen(seinen[3]),
-        cargarImagen(seinen[4]),
+        cargarImagen("seinen", seinen[0]),
+        cargarImagen("seinen", seinen[1]),
+        cargarImagen("seinen", seinen[2]),
+        cargarImagen("seinen", seinen[3]),
+        cargarImagen("seinen", seinen[4]),
 
-        cargarImagen(shojo[0]),
-        cargarImagen(shojo[1]),
-        cargarImagen(shojo[2]),
-        cargarImagen(shojo[3]),
-        cargarImagen(shojo[4]),
+        cargarImagen("shojo", shojo[0]),
+        cargarImagen("shojo", shojo[1]),
+        cargarImagen("shojo", shojo[2]),
+        cargarImagen("shojo", shojo[3]),
+        cargarImagen("shojo", shojo[4]),
 
-        cargarImagen(spokon[0]),
-        cargarImagen(spokon[1]),
-        cargarImagen(spokon[2]),
-        cargarImagen(spokon[3]),
-        cargarImagen(spokon[4]),
+        cargarImagen("spokon", spokon[0]),
+        cargarImagen("spokon", spokon[1]),
+        cargarImagen("spokon", spokon[2]),
+        cargarImagen("spokon", spokon[3]),
+        cargarImagen("spokon", spokon[4]),
 
-        cargarImagen(clasicos[0]),
-        cargarImagen(clasicos[1]),
-        cargarImagen(clasicos[2]),
-        cargarImagen(clasicos[3]),
-        cargarImagen(clasicos[4])
+        cargarImagen("clasicos", clasicos[0]),
+        cargarImagen("clasicos", clasicos[1]),
+        cargarImagen("clasicos", clasicos[2]),
+        cargarImagen("clasicos", clasicos[3]),
+        cargarImagen("clasicos", clasicos[4])
     };
 
     public Practica() {
