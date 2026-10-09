@@ -154,9 +154,12 @@ public class Practica extends JFrame {
         shonenJComboBox.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent evento) {
-                if (evento.getStateChange() == ItemEvent.SELECTED) {
+                if(evento.getStateChange() == ItemEvent.SELECTED){
                     int indice = shonenJComboBox.getSelectedIndex();
-                    actualizarInformacion(indice, informacionshonen);
+
+                    if (indice > 0) {
+                        actualizarInformacion(indice - 1, informacionshonen);
+                    }
                 }
             }
         });
@@ -164,9 +167,12 @@ public class Practica extends JFrame {
         seinenJComboBox.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent evento) {
-                if (evento.getStateChange() == ItemEvent.SELECTED) {
+                if(evento.getStateChange() == ItemEvent.SELECTED){
                     int indice = seinenJComboBox.getSelectedIndex();
-                    actualizarInformacion(indice + 5, informacionseinen);
+
+                    if(indice > 0) {
+                        actualizarInformacion(indice, informacionseinen);
+                    }
                 }
             }
         });
@@ -176,7 +182,10 @@ public class Practica extends JFrame {
             public void itemStateChanged(ItemEvent evento) {
                 if (evento.getStateChange() == ItemEvent.SELECTED) {
                     int indice = shojoJComboBox.getSelectedIndex();
-                    actualizarInformacion(indice + 10, informacionshojo);
+
+                    if(indice > 0){
+                        actualizarInformacion(indice + 10, informacionshojo);
+                    }
                 }
             }
         });
@@ -186,7 +195,11 @@ public class Practica extends JFrame {
             public void itemStateChanged(ItemEvent evento) {
                 if (evento.getStateChange() == ItemEvent.SELECTED) {
                     int indice = spokonJComboBox.getSelectedIndex();
-                    actualizarInformacion(indice + 15, informacionspokon);
+
+                    if(indice > 0){
+                        actualizarInformacion(indice + 15, informacionspokon);
+                
+                    }    
                 }
             }
         });
@@ -196,7 +209,10 @@ public class Practica extends JFrame {
             public void itemStateChanged(ItemEvent evento) {
                 if (evento.getStateChange() == ItemEvent.SELECTED) {
                     int indice = clasicosJComboBox.getSelectedIndex();
-                    actualizarInformacion(indice + 20, informacionclasicos);
+
+                    if(indice > 0){
+                        actualizarInformacion(indice + 20, informacionclasicos);
+                    }
                 }
             }
         });
